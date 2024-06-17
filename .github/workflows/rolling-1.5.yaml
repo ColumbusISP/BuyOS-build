@@ -228,7 +228,7 @@ jobs:
         working-directory: vyos-build
         run: |
           sudo make clean
-          sudo ./build-vyos-image iso \
+          sudo ./build-vyos-image generic \
               --architecture ${{ env.VYOS_ARCH }} \
               --build-by ${{ env.VYOS_BUILD_BY }} \
               --build-type ${{ env.VYOS_BUILD_TYPE }} \
